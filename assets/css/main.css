@@ -811,11 +811,11 @@ a {
 .contact__info span {
   margin-bottom: 0.625rem;
 }
-.contact form {
+.contact__form {
   flex: 1;
 }
-.contact form .input,
-.contact form textarea {
+.contact__form .input,
+.contact__form textarea {
   border: 0;
   outline: 0;
   background-color: #1a1a1a;
@@ -823,10 +823,10 @@ a {
   padding: 15px;
   margin-bottom: 15px;
 }
-.contact form textarea {
+.contact__form textarea {
   resize: none;
 }
-.contact form .submit-btn {
+.contact__form .submit-btn {
   cursor: pointer;
   border: 0;
   outline: 0;
