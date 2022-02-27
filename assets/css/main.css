@@ -753,8 +753,8 @@ a {
 }
 @media screen and (max-width: 576px) {
   .portfolio .container {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .portfolio .container .picture-box {
@@ -786,8 +786,9 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 4.375rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 @media screen and (max-width: 768px) {
   .contact .container {
@@ -813,8 +814,8 @@ a {
 .contact form {
   flex: 1;
 }
-.contact form .contact__form .input,
-.contact form .contact__form textarea {
+.contact form .input,
+.contact form textarea {
   border: 0;
   outline: 0;
   background-color: #1a1a1a;
@@ -822,10 +823,10 @@ a {
   padding: 15px;
   margin-bottom: 15px;
 }
-.contact form .contact__form textarea {
+.contact form textarea {
   resize: none;
 }
-.contact form .contact__form .submit-btn {
+.contact form .submit-btn {
   cursor: pointer;
   border: 0;
   outline: 0;
