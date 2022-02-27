@@ -779,7 +779,6 @@ a {
 @media screen and (max-width: 992px) {
   .contact {
     padding: 0;
-    padding-bottom:25px;
   }
 }
 .contact .container {
