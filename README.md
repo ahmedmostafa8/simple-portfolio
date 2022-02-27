@@ -1,2 +1,2 @@
-# simple-portfolio
+# Simple-Portfolio
 HTML CSS Simple Fake Portfolio
