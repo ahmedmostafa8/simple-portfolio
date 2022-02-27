@@ -1,0 +1,14 @@
+@use '../helpers/helpers' as *;
+// ==========================================
+.main-title {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid $items-background;
+  @include breakpoint(lg) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  span {
+    color: $color-primary;
+  }
+}

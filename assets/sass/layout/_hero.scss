@@ -1,0 +1,26 @@
+@use '../helpers/helpers' as *;
+@use '../components/buttons';
+// ==========================================
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 4rem;
+  @include breakpoint(lg) {
+    padding: 0;
+  }
+  h3 {
+    margin: 0 0 .625rem 0;
+  }
+  h1 {
+    margin: 0 0 .625rem 0;
+    span {
+      color: $color-primary;
+    }
+  }
+  p {
+    margin: 0 0 .9375rem 0;
+    line-height: 1.8;
+  }
+}

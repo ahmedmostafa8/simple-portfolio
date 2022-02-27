@@ -1,0 +1,48 @@
+@use "../helpers/helpers" as *;
+// ==========================================
+.education {
+  min-height: 100vh;
+  padding: 1rem 4rem;
+  @include breakpoint(lg) {
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 1.875rem;
+    row-gap: 3.75rem;
+    margin-top: 4rem;
+    .edu-box {
+      border-left: .0625rem solid $white-color;
+      padding-left: 2.5rem;
+      position: relative;
+      @media screen and (max-width:550px) {
+        margin-left: 1rem;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $color-primary;
+      }
+      .year {
+        color: $white-color;
+        background-color: $items-background;
+        width: fit-content;
+        padding: 0.25rem 1.25rem;
+        border-radius: 0.625rem;
+        margin-bottom: 0.625rem;
+      }
+      .title {
+        font-size: 1.4375rem;
+        font-weight: 500;
+      }
+      p {
+        line-height: 1.4;
+      }
+    }
+  }
+}

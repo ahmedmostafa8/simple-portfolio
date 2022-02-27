@@ -1,0 +1,60 @@
+@use "../helpers/helpers" as *;
+@use "../components/buttons";
+// ==========================================
+.contact {
+  min-height: 100vh;
+  padding: 1rem 4rem;
+  @include breakpoint(lg) {
+    padding: 0;
+  }
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4.375rem;
+    @include breakpoint(md) {
+      row-gap: 1.25rem;
+    }
+  }
+  &__info,
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    a {
+      color: $white-color;
+      margin-bottom: 0.625rem;
+      width: fit-content;
+      color: $color-primary;
+      transition: color 300ms;
+    }
+    span {
+      margin-bottom: 0.625rem;
+    }
+  }
+  form {
+    flex: 1;
+  .contact__form {
+      .input,
+      textarea {
+        border: 0;
+        outline: 0;
+        background-color: $section-background;
+        color: $white-color;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      textarea {
+        resize: none;
+      }
+      .submit-btn {
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+      }
+    }
+  }
+}

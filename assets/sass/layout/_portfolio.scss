@@ -1,0 +1,34 @@
+@use "../helpers/helpers" as *;
+// ==========================================
+.portfolio {
+  min-height: 100vh;
+  padding: 1rem 4rem;
+  @include breakpoint(lg) {
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 4rem;
+    @include breakpoint(sm) {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+    }
+    .picture-box {
+      background-color: $items-background;
+      border-radius: .625rem;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 400ms;
+      }
+      &:hover img {
+        transform: rotate(-5deg) scale(1.1);
+      }
+    }
+  }
+}
